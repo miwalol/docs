@@ -65,7 +65,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/miwalol/docs',
           label: 'GitHub',
           position: 'right',
         },
