@@ -37,7 +37,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/miwalol/docs/tree/master/',
+          editUrl: 'https://github.com/miwalol/docs/edit/master/',
           routeBasePath: '/',
         },
         blog: false,
