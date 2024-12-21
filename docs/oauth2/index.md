@@ -39,6 +39,12 @@ The request must include the following parameters:
 
 If the request is successful, you will receive a JSON response with an `access_token` and `refresh_token`.
 
+:::info
+
+Access tokens expires after one hour. You can refresh the access token using the refresh token (see [Refreshing an Access Token](#refreshing-an-access-token)), which expires after 7 days.
+
+:::
+
 :::warning
 
 The `client_secret` should **never** be exposed to the client. It should only be used server-side.
