@@ -1,4 +1,7 @@
-# Scopes
+---
+title: OAuth2 Scopes
+sidebar_position: 2
+---
 
 Scopes are used to grant access to specific resources and actions. They are used to limit the access of an access token to specific resources and actions. The scopes are defined by the API and are requested by the client during the authorization process.
 

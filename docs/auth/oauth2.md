@@ -1,9 +1,17 @@
 ---
-title: OAuth2 Apps
-sidebar_position: 3
+title: OAuth2
+sidebar_position: 1
+sidebar_label: OAuth2
+description: Learn how to authenticate with the API using OAuth2.
 ---
 
 OAuth2 apps are used to authenticate with the API. They are used to generate access tokens which are used to authenticate requests to the API.
+
+:::info
+
+If you are looking for a way to authenticate with the API without user interaction, see [Client Credentials](/auth/client-credentials).
+
+:::
 
 ## Creating an OAuth2 App
 
@@ -24,7 +32,7 @@ https://miwa.lol/oauth2/authorize?client_id=<YOUR_CLIENT_ID>&redirect_uri=<YOUR_
 Replace:
 - `<YOUR_CLIENT_ID>` with your OAuth2 app's client
 - `<YOUR_REDIRECT_URI>` with your OAuth2 app's redirect URI
-- `<SCOPES>` with the scopes you want to request. See [Scopes](/oauth2/scopes) for more information.
+- `<SCOPES>` with the scopes you want to request. See [Scopes](/auth/scopes.md) for more information.
 
 After visiting the URL, you will be prompted to log in and authorize the app. If you authorize the app, you will be redirected to the redirect URI with a `code` query parameter.
 
@@ -60,6 +68,7 @@ Here is an example of how to exchange an authorization code for an access token 
 
 ```bash
 curl -X POST https://miwa.lol/api/oauth2/token \
+    -H "Content-Type: application/x-www-form-urlencoded" \
     -d "client_id=YOUR_CLIENT_ID" \
     -d "client_secret=YOUR_CLIENT_SECRET" \
     -d "code=157845" \
@@ -85,6 +94,7 @@ Here is an example of how to refresh an access token using `curl`:
 
 ```bash
 curl -X POST https://miwa.lol/api/oauth2/token \
+    -H "Content-Type: application/x-www-form-urlencoded" \
     -d "client_id=YOUR_CLIENT_ID" \
     -d "client_secret=YOUR_CLIENT_SECRET" \
     -d "refresh_token=YOUR_REFRESH_TOKEN" \

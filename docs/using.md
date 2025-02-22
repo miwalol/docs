@@ -3,7 +3,7 @@ title: Using the API
 sidebar_position: 2
 ---
 
-Our API uses OAuth2 for authentication and authorization. This means that you need to obtain an access token to access the API. The access token is used to authenticate your requests to the API and to limit the access of the token to specific resources and actions. See the [OAuth2](/oauth2) documentation for more information on how to obtain an access token.
+Our API uses OAuth2 for authentication and authorization. This means that you need to obtain an access token to access the API. The access token is used to authenticate your requests to the API and to limit the access of the token to specific resources and actions. See the [OAuth2](/auth/oauth2) documentation for more information on how to obtain an access token.
 
 ## Base URL
 
