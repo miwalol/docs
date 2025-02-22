@@ -8,8 +8,32 @@ The following scopes are available:
 
 ### `identify`
 
-The `identify` scope grants access to the user's basic information, such as their username, display name, and avatar.
+Grants access to the user's information, such as their username, display name, and avatar.
 
 ### `email`
 
-The `email` scope grants access to the user's email address.
+Grants access to the user's email address.
+
+### `links`
+
+Grants access to the user's links and the ability to create, update, and delete them.
+
+### `cards`
+
+Grants access to the user's cards and the ability to create, update, and delete them.
+
+### `audios.manage`
+
+Grants ability to create, update, and delete audios.
+
+### `uploads`
+
+Grants ability to upload an avatar, background, audios, custom cursor, and custom font uploads.
+
+### `imagehost.upload`
+
+Grants ability to upload images to the image host.
+
+### `imagehost.delete`
+
+Grants ability to delete images from the image host.
