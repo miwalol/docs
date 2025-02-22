@@ -29,7 +29,7 @@ GET /api/cards/:id
 
 :::caution
 
-For types `discord` and `server`, the `value` field will be `null`.
+For type `discord`, the `value` field will be `null`.
 
 :::
 
