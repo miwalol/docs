@@ -7,7 +7,7 @@ This page contains information about the `/links` endpoint, which is used to man
 
 :::info
 
-This endpoint requires authentication and the [`links` scope](/oauth2/scopes#links).
+This endpoint requires authentication and the [`links` scope](/auth/scopes#links).
 
 :::
 

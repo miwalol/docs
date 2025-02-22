@@ -88,7 +88,7 @@ GET /api/user/:username
 
 :::info
 
-This endpoint requires authentication and the [`identify` scope](/oauth2/scopes#identify). If you want to get the user's email address, you will also need the [`email` scope](/oauth2/scopes#email).
+This endpoint requires authentication and the [`identify` scope](/auth/scopes#identify). If you want to get the user's email address, you will also need the [`email` scope](/auth/scopes#email).
 
 :::
 
@@ -176,7 +176,7 @@ This is practically the same as the response from the previous endpoint, but wit
 
 :::info
 
-This endpoint requires authentication and the [`profile.update` scope](/oauth2/scopes#profileupdate).
+This endpoint requires authentication and the [`profile.update` scope](/auth/scopes#profileupdate).
 
 :::
 

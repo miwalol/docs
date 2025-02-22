@@ -7,7 +7,7 @@ This page contains information about the `/upload` endpoint, which is used to up
 
 :::info
 
-Those endpoints requires authentication and the [`uploads` scope](/oauth2/scopes#uploads).
+Those endpoints requires authentication and the [`uploads` scope](/auth/scopes#uploads).
 
 :::
 
@@ -107,7 +107,7 @@ Covers URLs are just `https://cdn.miwa.lol/audios-covers/:id.png`, where `:id` i
 
 :::info
 
-This endpoint requires the [`audios.manage`](/oauth2/scopes#audios.manage) scope.
+This endpoint requires the [`audios.manage`](/auth/scopes#audios.manage) scope.
 
 :::
 
@@ -145,7 +145,7 @@ Returns the updated audio object.
 
 :::info
 
-This endpoint requires the [`audios.manage`](/oauth2/scopes#audios.manage) scope.
+This endpoint requires the [`audios.manage`](/auth/scopes#audios.manage) scope.
 
 :::
 
