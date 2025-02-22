@@ -5,6 +5,12 @@ sidebar_position: 4
 
 This page contains information about the `/upload` endpoint, which is used to upload avatars, backgrounds, audios, custom cursors, and custom fonts.
 
+:::info
+
+Those endpoints requires authentication and the [`uploads` scope](/oauth2/scopes#uploads).
+
+:::
+
 ## Upload an avatar
 
 Upload a new avatar, and replace the current one if you have one.
@@ -99,6 +105,12 @@ Covers URLs are just `https://cdn.miwa.lol/audios-covers/:id.png`, where `:id` i
 
 ## Update an audio
 
+:::info
+
+This endpoint requires the [`audios.manage`](/oauth2/scopes#audios.manage) scope.
+
+:::
+
 Update an audio by its ID.
 
 ### Request
@@ -130,6 +142,12 @@ Returns the updated audio object.
 ```
 
 ## Delete an audio
+
+:::info
+
+This endpoint requires the [`audios.manage`](/oauth2/scopes#audios.manage) scope.
+
+:::
 
 Delete an audio by its ID.
 

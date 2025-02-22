@@ -5,6 +5,12 @@ sidebar_position: 2
 
 This page contains information about the `/cards` endpoint, which is used to manage your cards.
 
+:::info
+
+This endpoint requires authentication and the [`cards` scope](/oauth2/scopes#cards).
+
+:::
+
 ## Get a card
 
 Get a card by its ID.

@@ -14,17 +14,21 @@ Grants access to the user's information, such as their username, display name, a
 
 Grants access to the user's email address.
 
+### `profile.update`
+
+Grants ability to update the user's profile, such as their username, display name, colors, effects, etc.
+
 ### `links`
 
 Grants access to the user's links and the ability to create, update, and delete them.
 
 ### `cards`
 
-Grants access to the user's cards and the ability to create, update, and delete them.
+Grants access to the user's cards and the ability to create and delete them.
 
 ### `audios.manage`
 
-Grants ability to create, update, and delete audios.
+Grants ability to update and delete audios. For uploading audios, you need the `uploads` scope.
 
 ### `uploads`
 

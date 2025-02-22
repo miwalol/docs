@@ -5,6 +5,12 @@ sidebar_position: 3
 
 This page contains information about the `/links` endpoint, which is used to manage your links.
 
+:::info
+
+This endpoint requires authentication and the [`links` scope](/oauth2/scopes#links).
+
+:::
+
 ## Get a link
 
 Get a link by its ID.
@@ -55,6 +61,38 @@ Returns a 201 status on success, and the link object in the response body.
   "id": "5675e563-0fd3-419b-947f-d95e507f673b",
   "type": "steam",
   "value": "id/PasYuuto"
+}
+```
+
+## Update a link
+
+Update a link by its ID.
+
+### Request
+
+`:id` is the ID of the link you want to update.
+
+```http request
+PATCH /api/links/:id
+Content-Type: application/json
+```
+
+Example body:
+```json
+{
+  "value": "id/Yuuto"
+}
+```
+
+### Example Response
+
+Returns a 200 status on success, and the updated link object in the response body.
+
+```json
+{
+  "id": "5675e563-0fd3-419b-947f-d95e507f673b",
+  "type": "steam",
+  "value": "id/Yuuto"
 }
 ```
 
