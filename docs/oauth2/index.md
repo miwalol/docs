@@ -1,4 +1,7 @@
-# OAuth2 Apps
+---
+title: OAuth2 Apps
+sidebar_position: 3
+---
 
 OAuth2 apps are used to authenticate with the API. They are used to generate access tokens which are used to authenticate requests to the API.
 
