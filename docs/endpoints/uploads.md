@@ -1,6 +1,6 @@
 ---
 title: Uploads
-sidebar_position: 3
+sidebar_position: 4
 ---
 
 This page contains information about the `/upload` endpoint, which is used to upload avatars, backgrounds, audios, custom cursors, and custom fonts.
