@@ -5,7 +5,7 @@ sidebar_label: OAuth2
 description: Learn how to authenticate with the API using OAuth2.
 ---
 
-OAuth2 apps are used to authenticate with the API. They are used to generate access tokens which are used to authenticate requests to the API.
+OAuth2 clients are used to authenticate with the API. They are used to generate access tokens which are used to authenticate requests to the API.
 
 :::info
 
@@ -13,17 +13,28 @@ If you are looking for a way to authenticate with the API without user interacti
 
 :::
 
-## Creating an OAuth2 App
+## Creating an OAuth2 client
 
-:::warning
+To create an OAuth2 client, please access the [developers settings](https://miwa.lol/dashboard/settings/developers), and click on the "Create a new client" button.
 
-We currently do not have a way to create OAuth2 apps. This will be added in the future.
+You will be prompted to enter the following information:
+- **Name**: The name of your app
+- **Description**: A description of your app
+- **Redirect URI**: The URI where users will be redirected after authorizing the app
+- **Terms of Service URL**: A URL to your app's terms of service, if applicable
+- **Privacy Policy URL**: A URL to your app's privacy policy, if applicable
+
+After entering the information, click on the "Create" button. You will be provided a Client ID and Client Secret. Keep these safe, as they are used to authenticate with the API.
+
+:::danger
+
+The client secret should **never** be exposed on the client-side. It should only be used server-side.
 
 :::
 
-## Authorizing an OAuth2 App
+## Authorizing an OAuth2 client
 
-To authorize an OAuth2 app, you must visit the following URL:
+To authorize an OAuth2 client, you must visit the following URL:
 
 ```
 https://miwa.lol/oauth2/authorize?client_id=<YOUR_CLIENT_ID>&redirect_uri=<YOUR_REDIRECT_URI>&response_type=code&scope=<SCOPES>
@@ -32,9 +43,10 @@ https://miwa.lol/oauth2/authorize?client_id=<YOUR_CLIENT_ID>&redirect_uri=<YOUR_
 Replace:
 - `<YOUR_CLIENT_ID>` with your OAuth2 app's client
 - `<YOUR_REDIRECT_URI>` with your OAuth2 app's redirect URI
-- `<SCOPES>` with the scopes you want to request. See [Scopes](/auth/scopes.md) for more information.
+- `<SCOPES>` with the scopes you want to request, separated by a space. See [Scopes](/auth/scopes.md) for more information.
 
 After visiting the URL, you will be prompted to log in and authorize the app. If you authorize the app, you will be redirected to the redirect URI with a `code` query parameter.
+See the next section for information on exchanging the authorization code for an access token.
 
 ## Exchanging the Authorization Code for an Access Token
 
@@ -56,9 +68,9 @@ Access tokens expires after one hour. You can refresh the access token using the
 
 :::
 
-:::warning
+:::danger
 
-The `client_secret` should **never** be exposed to the client. It should only be used server-side.
+The `client_secret` should **never** be exposed on the client-side. It should only be used server-side.
 
 :::
 
