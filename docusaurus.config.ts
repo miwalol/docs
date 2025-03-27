@@ -129,7 +129,7 @@ const config: Config = {
     require.resolve('docusaurus-lunr-search')
   ],
   scripts: [{
-    src: 'https://analytics.miwa.lol/js/script.js',
+    src: 'https://analytics.miwa.lol/js/plausible.js',
     defer: true,
     'data-domain': 'developers.miwa.lol',
   }]
