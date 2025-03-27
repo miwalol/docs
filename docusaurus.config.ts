@@ -131,7 +131,7 @@ const config: Config = {
   scripts: [{
     src: 'https://analytics.miwa.lol/js/script.js',
     defer: true,
-    'data-domain': 'help.miwa.lol',
+    'data-domain': 'developers.miwa.lol',
   }]
 };
 
